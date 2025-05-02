@@ -355,15 +355,13 @@ body {
 }
 
 .profile-photo {
-    width: 100%;
-    max-width: 300px;
+    width: auto; /* Cambiado de 100% a auto */
+    height: auto; /* Mantiene proporciones */
+    max-width: 280px; /* Tamaño máximo ajustado */
+    max-height: 350px; /* Altura máxima para evitar que sea muy alta */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-.profile-photo:hover {
-    transform: scale(1.03);
 }
 
 .about-section {
