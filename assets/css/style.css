@@ -28,8 +28,9 @@ body {
 }
 
 .header h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .social-links a {
@@ -37,11 +38,30 @@ body {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.5s ease; /* Transición suave para todos los cambios */
+    display: inline-block; /* Necesario para que transform funcione */
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.black {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: color 1s linear;
+}
+
+.black:hover {
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 1s linear;
 }
 
 /* Tarjetas de proyectos */
 .project-card {
-    background: white;
+    background-color: white;
+    transition: background-color 1.8s linear;
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 30px;
@@ -51,6 +71,9 @@ body {
 
 .project-card:hover {
     transform: translateY(-5px);
+    transition: background-color 1.8s linear;
+    background-color: #333;
+    color: whitesmoke;
 }
 
 .project-header {
@@ -74,6 +97,7 @@ body {
 .btn:hover {
     background: #005582;
 }
+
 
 /* Grid de habilidades */
 .skills-grid {
@@ -123,9 +147,11 @@ body {
 
 .btn-primary {
     background: var(--primary-color);
-    padding: 12px 25px;
-    font-size: 1.1rem;
+    padding: 10px 25px;
+    font-size: 1rem;
 }
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
