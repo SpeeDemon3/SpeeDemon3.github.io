@@ -553,6 +553,10 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    #btn-front {
+        margin-top: 2px;
+    }
 }
 
 @media (max-width: 600px) {
